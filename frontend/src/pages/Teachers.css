@@ -1,0 +1,146 @@
+.teachers-page {
+  min-height: 80vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.teachers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teachers-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.teachers-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.teachers-header p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 100px;
+}
+
+
+.profile-card {
+  width: 320px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(25, 40, 60, 0.08);
+  overflow: hidden;
+  padding: 18px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.avatar {
+  flex: 0 0 72px;
+  height: 72px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e6eef9;
+  display: grid;
+  place-items: center;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.name-qual {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f1724;
+  line-height: 1.1;
+}
+
+.qualification {
+  font-size: 0.86rem;
+  color: #4b5563;
+}
+
+.meta {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.experience {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.bio {
+  margin-top: 12px;
+  font-size: 0.92rem;
+  color: #374151;
+  line-height: 1.45;
+}
+
+/* small footer area for optional contact or tags */
+.card-footer {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.82rem;
+  color: #374151;
+  background: #f3f4f6;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+/* responsive: make card slightly narrower on very small screens */
+@media (max-width: 360px) {
+  .profile-card { width: 100%; padding: 14px; }
+  .avatar { flex-basis: 64px; height: 64px; }
+}
+
+
+@media (max-width: 768px) {
+  .teachers-header h1 {
+    font-size: 2rem;
+  }
+
+  .teachers-grid {
+    grid-template-columns: 1fr;
+  }
+}
