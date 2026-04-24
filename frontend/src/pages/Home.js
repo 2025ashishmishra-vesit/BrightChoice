@@ -22,10 +22,6 @@ const Home = () => {
         </div>
         <div className="hero-image">
           <div className="floating-elements">
-            {/* <span className="float-emoji">📚</span>
-            <span className="float-emoji">🎯</span>
-            <span className="float-emoji">🌟</span>
-            <span className="float-emoji">🎨</span> */}
           </div>
         </div>
       </section>
